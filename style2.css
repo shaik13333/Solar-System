@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#sun_earth{
+    height: 900px;
+    width: 900px;
+    /* border: solid; */
+    border-radius: 50%;
+    position: relative;
+    animation: rot 15s linear infinite;
+    margin-left: 450px;
+    /* margin-top: 20px; */
+    
+}
+#sun{
+    position: absolute;
+    height: 350px;
+    width: 350px;
+    /* border: solid; */
+    border-radius: 50%;
+    left: 280px;
+    top: 280px;
+    margin-bottom: 20px;
+    /* animation: rot 10s linear infinite; */
+}
+#earth_moon{ 
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    /* border: solid;    */
+    border-radius: 50%;
+    left: 330px;
+    top: 0px;
+    position: relative;
+    animation: rot 5s linear infinite;
+}
+#earth{
+    position: absolute;
+    height: 120px;
+object-fit: cover;
+    width: 120px;
+    /* border: solid; */
+    border-radius: 50%;
+    left: 92px;
+    top: 92px;
+    animation: rot 10s linear infinite;
+}
+#moon{
+    position: absolute;
+    height: 50px;
+
+    width: 50px;
+    /* border: solid; */
+    border-radius: 50%;
+    left: 92px;
+    top: 0px;
+    animation: rot 3s linear infinite;
+}
+@keyframes rot {
+    from{transform:rotate(0deg);}
+    to{transform:rotate(360deg);}
+}
+div{
+    background-image: url(stars.jpeg);
+    background-position: center;
+   
+    /* width: 100%; */
+    padding-bottom:22px;
+    overflow-y: hidden;
+}
+

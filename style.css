@@ -1,0 +1,30 @@
+
+@font-face {
+    font-family:unknown ;
+    src: url(./NotoSerifKhitanSmallScript-Regular.ttf);
+}
+section{
+    font-family: unknown;
+}
+div{
+    height: 100px;
+    width: 100px;
+    border: solid;
+    margin-bottom: 10px;
+    animation: timing 5s infinite;
+}
+@keyframes timing {
+    to{transform:translateX(500px)}
+}
+@keyframes rotation {
+    from{transform:rotatez(0deg);}
+    to{transform:rotatez(360deg);}
+}
+#container{
+    animation: rotation 10s infinite;
+    animation-timing-function: linear;
+}
+#sun{
+    animation:rotation 10s infinite ;
+    animation-timing-function: linear;
+}
